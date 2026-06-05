@@ -1,6 +1,6 @@
 
 ---
-➡ [قبلی](./00-03-Translator-Preface.md) | [پیشگفتار مترجم](./00-04-Praise.md) | [بعدی](./00-05-Foreword.md) ⬅
+➡ [قبلی](./00-03-Translator-Preface.md) | [تحسین‌ها برای Domain Driven Design](./00-04-Praise.md) | [بعدی](./00-05-Foreword.md) ⬅
 ---
 
 # تحسین‌ها برای Domain Driven Design
@@ -33,5 +33,5 @@
 —لوک هومن، نویسندهٔ *Beyond Software Architecture*
 
 ---
-➡ [قبلی](./00-03-Translator-Preface.md) | [پیشگفتار مترجم](./00-04-Praise.md) | [بعدی](./00-05-Foreword.md) ⬅
+➡ [قبلی](./00-03-Translator-Preface.md) | [تحسین‌ها برای Domain Driven Design](./00-04-Praise.md) | [بعدی](./00-05-Foreword.md) ⬅
 ---
