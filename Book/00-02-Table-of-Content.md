@@ -12,7 +12,10 @@
 - [پیشگفتار](./00-05-Foreword.md)
 - [مقدمه](./00-06-Preface.md)
 - [قدردانی‌ها](./00-07-Acknowledgments.md)
-- [بخش ۱ – به‌کارگیری Domain model](./Part-1/Part-1-Preface.md)
+- بخش ۱ – به‌کارگیری Domain model
+  - [مقدمه](./Part-1/Part-1-Preface.md)
+  - فصل ۱: واکاوی دانش
+    - [مقدمه](./Part-1/C01/C01-00.md)
 
 ---
 ➡ [قبلی](./00-01-Cover.md) | [فهرست مطالب](./00-02-Table-of-Content.md) | [بعدی](./00-03-Translator-Preface.md) ⬅
