@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Translation-In%20Progress-yellow?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Chapters-0%2F16-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Chapters-1%2F16-success?style=for-the-badge">
   <img src="https://img.shields.io/github/stars/Soheil-Ssh/ddd-tackling-complexity-persian?style=for-the-badge">
 </p>
 
