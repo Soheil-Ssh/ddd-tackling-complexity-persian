@@ -91,5 +91,5 @@
 
 
 ---
-➡ [قبلی](./00-02-Table-of-Content.md) | [پیشگفتار مترجم](./00-02-Table-of-Content.md) | [بعدی](./00-04-Praise.md) ⬅
+➡ [قبلی](./00-02-Table-of-Content.md) | [پیشگفتار مترجم](./00-03-Translator-Preface.md) | [بعدی](./00-04-Praise.md) ⬅
 ---
