@@ -1,0 +1,67 @@
+name: "پیشنهاد یا مشکل عمومی"
+description: "گزارش موضوعی که در قالب‌های دیگر قرار نمی‌گیرد"
+title: "[General]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        لطفاً ابتدا بررسی کنید که موضوع شما در قالب خطای ترجمه، اشکال نگارشی یا پیشنهاد اصطلاح فنی قرار نمی‌گیرد.
+
+  - type: checkboxes
+    id: existing-issue
+    attributes:
+      label: "بررسی اولیه"
+      options:
+        - label: "Issueهای موجود را بررسی کرده‌ام و گزارش مشابهی پیدا نکردم."
+          required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "دسته‌بندی"
+      options:
+        - "ساختار مخزن"
+        - "تجربه مطالعه"
+        - "دسترسی‌پذیری"
+        - "فهرست مطالب یا ناوبری"
+        - "فرایند مشارکت"
+        - "پیشنهاد قابلیت جدید"
+        - "سایر موارد"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "شرح موضوع"
+      description: "مشکل یا پیشنهاد را روشن و با جزئیات کافی توضیح دهید."
+      placeholder: "موضوع موردنظر..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: "راه‌حل پیشنهادی"
+      description: "در صورت امکان توضیح دهید چه تغییری می‌تواند این موضوع را بهبود دهد."
+      placeholder: "پیشنهاد می‌کنم..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "اطلاعات تکمیلی"
+      description: "لینک، تصویر یا اطلاعات دیگری که به بررسی موضوع کمک می‌کند."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution-terms
+    attributes:
+      label: "تأیید نهایی"
+      options:
+        - label: "راهنمای مشارکت و شرایط LICENSE.md را مطالعه کرده‌ام."
+          required: true

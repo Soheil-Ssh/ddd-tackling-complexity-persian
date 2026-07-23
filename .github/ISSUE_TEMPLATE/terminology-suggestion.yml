@@ -1,0 +1,92 @@
+name: "پیشنهاد اصطلاح فنی"
+description: "پیشنهاد معادل جدید یا اصلاح نحوه استفاده از یک اصطلاح فنی"
+title: "[Terminology]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        تغییر یک اصطلاح ممکن است روی چند فصل اثر بگذارد. لطفاً دلیل، بافت و نمونه کاربرد را با دقت وارد کنید.
+
+  - type: checkboxes
+    id: preliminary-checks
+    attributes:
+      label: "بررسی‌های اولیه"
+      options:
+        - label: "Issueهای موجود را بررسی کرده‌ام و پیشنهاد مشابهی پیدا نکردم."
+          required: true
+        - label: "کاربرد این اصطلاح را در بخش‌های دیگر مخزن بررسی کرده‌ام."
+          required: true
+
+  - type: input
+    id: english-term
+    attributes:
+      label: "اصطلاح انگلیسی"
+      placeholder: "Ubiquitous Language"
+    validations:
+      required: true
+
+  - type: input
+    id: current-equivalent
+    attributes:
+      label: "معادل یا شیوه فعلی"
+      description: "اگر اصطلاح هنوز در مخزن استفاده نشده است، بنویسید «استفاده نشده»."
+      placeholder: "زبان فراگیر"
+    validations:
+      required: true
+
+  - type: input
+    id: proposed-equivalent
+    attributes:
+      label: "معادل یا شیوه پیشنهادی"
+      placeholder: "زبان مشترک / حفظ اصطلاح انگلیسی / ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "بافت و محل کاربرد"
+      description: "مسیر فایل، عنوان بخش و یک نمونه کوتاه از کاربرد اصطلاح را وارد کنید."
+      placeholder: "Book/... — در این بخش اصطلاح به مفهوم ... اشاره می‌کند."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: "دلیل پیشنهاد"
+      description: "مزیت پیشنهاد خود را از نظر دقت فنی، خوانایی، رایج‌بودن یا امکان جست‌وجو توضیح دهید."
+      placeholder: "این معادل دقیق‌تر است، زیرا..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "منابع یا نمونه‌های پشتیبان"
+      description: "در صورت وجود، لینک مستندات، کتاب‌ها، مقالات یا کاربردهای رایج را اضافه کنید."
+      placeholder: "لینک یا نام منبع..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: desired-scope
+    attributes:
+      label: "دامنه تغییر پیشنهادی"
+      options:
+        - "فقط همین مورد"
+        - "یک فصل"
+        - "تمام مخزن"
+        - "هنوز مشخص نیست"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution-terms
+    attributes:
+      label: "تأیید نهایی"
+      options:
+        - label: "راهنمای مشارکت و شرایط LICENSE.md را مطالعه کرده‌ام و حق ارائه محتوای این گزارش را دارم."
+          required: true

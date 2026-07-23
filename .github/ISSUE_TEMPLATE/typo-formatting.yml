@@ -1,0 +1,84 @@
+name: "اشکال نگارشی یا قالب‌بندی"
+description: "گزارش غلط املایی، نیم‌فاصله، نشانه‌گذاری، لینک خراب یا مشکل Markdown"
+title: "[Docs]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        این فرم برای خطاهایی است که معنای ترجمه را تغییر نمی‌دهند؛ مانند غلط املایی، نیم‌فاصله، نشانه‌گذاری یا قالب‌بندی.
+
+  - type: checkboxes
+    id: existing-issue
+    attributes:
+      label: "بررسی اولیه"
+      options:
+        - label: "Issueهای موجود را بررسی کرده‌ام و گزارش مشابهی پیدا نکردم."
+          required: true
+
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: "نوع مشکل"
+      options:
+        - "غلط املایی"
+        - "نیم‌فاصله"
+        - "نشانه‌گذاری"
+        - "قالب‌بندی Markdown"
+        - "لینک خراب"
+        - "مسیر تصویر یا فایل"
+        - "ناوبری فصل قبلی/بعدی"
+        - "سایر موارد"
+    validations:
+      required: true
+
+  - type: input
+    id: file-path
+    attributes:
+      label: "مسیر فایل"
+      placeholder: "Book/Part-1/Chapter-01/example.md"
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: "عنوان بخش یا محل تقریبی"
+      placeholder: "عنوان بخش / پاراگراف دوم / انتهای فایل"
+    validations:
+      required: false
+
+  - type: textarea
+    id: current-content
+    attributes:
+      label: "متن یا وضعیت فعلی"
+      description: "بخش کوتاهی را که مشکل دارد وارد کنید. برای لینک یا تصویر، مسیر فعلی را بنویسید."
+      placeholder: "متن یا مسیر فعلی..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-content
+    attributes:
+      label: "اصلاح پیشنهادی"
+      description: "شکل صحیح متن، لینک، مسیر یا قالب‌بندی را وارد کنید."
+      placeholder: "نسخه اصلاح‌شده..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "اطلاعات تکمیلی"
+      description: "در صورت نیاز، تصویر، توضیح یا جزئیات بیشتری اضافه کنید."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution-terms
+    attributes:
+      label: "تأیید نهایی"
+      options:
+        - label: "راهنمای مشارکت و شرایط LICENSE.md را مطالعه کرده‌ام."
+          required: true

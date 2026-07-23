@@ -1,0 +1,107 @@
+name: "خطای ترجمه"
+description: "گزارش ترجمه نادرست، ناقص، مبهم یا ناسازگار با متن اصلی"
+title: "[Translation]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        از اینکه به بهبود ترجمه کمک می‌کنید ممنونم. لطفاً اطلاعات زیر را تا حد ممکن دقیق وارد کنید.
+        برای رعایت حقوق اثر، فقط کوتاه‌ترین بخش لازم از متن اصلی را نقل کنید.
+
+  - type: checkboxes
+    id: preliminary-checks
+    attributes:
+      label: "بررسی‌های اولیه"
+      options:
+        - label: "Issueهای موجود را بررسی کرده‌ام و گزارش مشابهی پیدا نکردم."
+          required: true
+        - label: "فقط بخش کوتاه و ضروری متن اصلی را در این گزارش قرار می‌دهم."
+          required: true
+
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: "نوع مشکل"
+      description: "نزدیک‌ترین گزینه را انتخاب کنید."
+      options:
+        - "انتقال نادرست معنا"
+        - "حذف بخشی از معنا"
+        - "اضافه‌شدن معنایی که در متن اصلی نیست"
+        - "جمله نامفهوم یا غیرطبیعی"
+        - "کاربرد نادرست اصطلاح فنی"
+        - "ناهماهنگی با بخش‌های دیگر کتاب"
+        - "سایر موارد"
+    validations:
+      required: true
+
+  - type: input
+    id: file-path
+    attributes:
+      label: "مسیر فایل"
+      description: "مسیر دقیق فایل را از ریشه مخزن وارد کنید."
+      placeholder: "Book/Part-1/Chapter-01/example.md"
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: "عنوان بخش یا محل تقریبی"
+      description: "عنوان بخش، شماره پاراگراف یا توضیحی برای پیداکردن محل مشکل بنویسید."
+      placeholder: "بخش مدل‌سازی مؤثر / پاراگراف سوم"
+    validations:
+      required: false
+
+  - type: textarea
+    id: current-translation
+    attributes:
+      label: "ترجمه فعلی"
+      description: "جمله یا بخش فارسی دارای مشکل را وارد کنید."
+      placeholder: "متن فعلی ترجمه‌شده..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: original-reference
+    attributes:
+      label: "متن اصلی یا ارجاع آن"
+      description: "فقط یک یا دو جمله کوتاه مرتبط را وارد کنید؛ یا شماره صفحه و عنوان بخش را بنویسید."
+      placeholder: "عبارت کوتاه انگلیسی یا ارجاع دقیق به نسخه اصلی..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: explanation
+    attributes:
+      label: "توضیح مشکل"
+      description: "توضیح دهید چرا ترجمه فعلی نادرست، ناقص یا نامفهوم است."
+      placeholder: "این ترجمه مفهوم ... را منتقل نمی‌کند، زیرا..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "ترجمه پیشنهادی"
+      description: "در صورت امکان، نسخه پیشنهادی خود را بنویسید."
+      placeholder: "پیشنهاد می‌کنم این بخش به‌شکل زیر ترجمه شود..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "اطلاعات تکمیلی"
+      description: "هر منبع، مثال یا توضیح دیگری که به بررسی گزارش کمک می‌کند."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution-terms
+    attributes:
+      label: "تأیید نهایی"
+      options:
+        - label: "راهنمای مشارکت و شرایط LICENSE.md را مطالعه کرده‌ام و حق ارائه این گزارش را دارم."
+          required: true
