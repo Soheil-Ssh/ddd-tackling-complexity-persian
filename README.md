@@ -14,8 +14,8 @@
 
 [شروع مطالعه](./Book/00-03-Translator-Preface.md) ·
 [فهرست مطالب](./Book/00-02-Table-of-Content.md) ·
-[گزارش مشکل](https://github.com/Soheil-Ssh/ddd-tackling-complexity-persian/issues/new) ·
-[مشارکت در ترجمه](https://github.com/Soheil-Ssh/ddd-tackling-complexity-persian/pulls)
+[گزارش مشکل](https://github.com/Soheil-Ssh/ddd-tackling-complexity-persian/issues/new/choose) ·
+[راهنمای مشارکت](./CONTRIBUTING.md)
 
 </div>
 
@@ -126,18 +126,19 @@
 
 ```text
 .
+├── .github/
+│   └── ISSUE_TEMPLATE/
 ├── Book/
-│   ├── 00-01-Cover.md
-│   ├── 00-02-Table-of-Content.md
-│   ├── 00-03-Translator-Preface.md
-│   └── Part-1/
 ├── Images/
+├── CONTRIBUTING.md
 ├── LICENSE.md
 └── README.md
 ```
 
 - پوشه `Book` شامل فصل‌ها و بخش‌های ترجمه‌شده کتاب است.
 - پوشه `Images` شامل تصاویر استفاده‌شده در متن کتاب است.
+- پوشه `.github/ISSUE_TEMPLATE` شامل فرم‌های استاندارد ثبت خطا و پیشنهاد است.
+- فایل `CONTRIBUTING.md` روش گزارش مشکل و ارسال تغییرات را توضیح می‌دهد.
 - فایل `LICENSE.md` وضعیت حقوق اثر و محدودیت‌های استفاده از محتوای مخزن را مشخص می‌کند.
 - فایل فهرست مطالب، مسیر دسترسی به تمام بخش‌های منتشرشده را فراهم می‌کند.
 
@@ -155,7 +156,7 @@
 - بررسی فنی مفاهیم ترجمه‌شده
 - ارسال اصلاحات از طریق `Pull Request`
 
-برای گزارش مشکل، یک [Issue جدید](https://github.com/Soheil-Ssh/ddd-tackling-complexity-persian/issues/new) ایجاد کنید.
+برای گزارش مشکل، از [فرم مناسب ثبت Issue](https://github.com/Soheil-Ssh/ddd-tackling-complexity-persian/issues/new/choose) استفاده کنید. پیش از ارسال تغییر نیز [راهنمای مشارکت](./CONTRIBUTING.md) را بخوانید.
 
 هنگام گزارش خطای ترجمه، بهتر است اطلاعات زیر را نیز وارد کنید:
 
@@ -198,6 +199,7 @@
 
 [شروع مطالعه](./Book/00-03-Translator-Preface.md) ·
 [فهرست مطالب](./Book/00-02-Table-of-Content.md) ·
+[راهنمای مشارکت](./CONTRIBUTING.md) ·
 [مجوز و حقوق اثر](./LICENSE.md) ·
 [Issues](https://github.com/Soheil-Ssh/ddd-tackling-complexity-persian/issues) ·
 [Pull Requests](https://github.com/Soheil-Ssh/ddd-tackling-complexity-persian/pulls)
